@@ -1,16 +1,9 @@
 pipeline {
     agent any
-
     stages {
-        stage('Build') {
+        stage('Demo') {
             steps {
-                bat 'echo Building from GitHub Pipeline'
-            }
-        }
-
-        stage('Run Python') {
-            steps {
-                bat 'python hello.py'
+                bat 'echo Pipeline using Git is working successfully!'
             }
         }
     }
